@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+
+
+
+<ng2-toasty></ng2-toasty>
+<p-confirmDialog header="Confirmação" icon="fa-fa-question-circle" #confirmacao>
+    <p-footer>
+        <button icon="fa-check" type="button" pbutton label="Sim" 
+        (click)="confirmacao.accept()"></button>
+        <button icon="fa-times" type="button" pbutton label="Não"
+        (click)="confirmacao.reject()"></button>
+    </p-footer>
+</p-confirmDialog>
+
+
+
+
